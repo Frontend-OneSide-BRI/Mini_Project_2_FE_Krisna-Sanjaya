@@ -14,10 +14,10 @@ import CardCategory from '../components/CardCategory';
 import { Grid } from '@mui/material';
 
 
-export default function Home() {
-    const [filter, setFilter] = useState(null)
-    const [textSearch, setTextSearch] = useState(null)
+export default function Main() {
 
+    // states
+    const [textSearch, setTextSearch] = useState(null)
     const [data, setData] = useState([
         {
             name: 'Bird 1',
@@ -116,7 +116,6 @@ export default function Home() {
             id_category: 2
         }
     ])
-
     const [category, setCategory] = useState([
         {
             id: 1,
@@ -127,9 +126,9 @@ export default function Home() {
             category: 'Ikan'
         }
     ])
-
     const [dataGallery, setDataGallery] = useState([])
 
+    // useEffect
     useEffect(() => {
         let flag = true
 
@@ -142,6 +141,8 @@ export default function Home() {
         }
     }, [])
 
+
+    // function for search bar
     const handleSearch = (e) => {
         setTextSearch(e.target.value)
         setDataGallery(data)
@@ -154,6 +155,7 @@ export default function Home() {
         }, 500)
     }
 
+    // function for filter button
     const handleFilter = (value) => {
         console.log(textSearch)
         setTimeout(() => {

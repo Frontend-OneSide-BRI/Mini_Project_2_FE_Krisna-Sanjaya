@@ -47,11 +47,11 @@ const useStyles = makeStyles((theme) => ({
 const carouselItems = [
   {
     imageUrl: 'https://cdn.pixabay.com/photo/2023/05/19/13/28/bird-8004544_1280.jpg',
-    caption: 'Description for Image 1',
+    caption: 'Bird',
   },
   {
     imageUrl: 'https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg',
-    caption: 'Description for Image 2',
+    caption: 'Bird 2',
   },
   // ...
 ];

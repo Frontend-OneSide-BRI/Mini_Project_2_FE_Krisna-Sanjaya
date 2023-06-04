@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
 
 export default function CardCategory({animal}) {
+  // states
   let [name, url, desc] = [animal.name, animal.url, animal.desc]
   return (
     <Grid item lg={3} md={4} sm={6} xs={12}>
